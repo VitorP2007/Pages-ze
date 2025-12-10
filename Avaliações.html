@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado do Zé</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+    <body id = "topo">
+        <header id="header">
+            <div class="logo">
+                <a href="index.html"><img src="img/Land Page/Logo.png" alt="Logo Mercado do Zé"></a>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="Sobrenos.html">Sobre Nós</a></li>
+                    <li><a href="Produtos.html">Produtos</a></li>
+                    <li><a href="Duvidas.html">Dúvidas</a></li>
+                    <li><a href="#avaliacoes">Avaliações</a></li>
+                    <li><a href="#footer">Fale Conosco</a></li>
+                </ul>
+            </nav>
+
+            <div class="botoes">
+                <img id="abrir-carrinho" src="img/Land Page/Compras.png" alt="Carrinho">
+                <img id="menu-btn" src="img/Land Page/Menu.png" alt="Menu">
+            </div>
+        </header>
+
+        <!-- OVERLAY DO CARRINHO -->
+        <div id="carrinho-overlay" class="carrinho-overlay"></div>
+
+        <!-- CARRINHO LATERAL -->
+        <aside id="carrinho" class="carrinho">
+
+            <h2 class="carrinho-titulo">Carrinho</h2>
+
+            <div id="carrinho-itens" class="carrinho-itens">
+                <!-- Os itens serão adicionados via JavaScript -->
+            </div>
+
+            <div class="carrinho-total">
+                <span>Total:</span>
+                <strong id="carrinho-total-valor">R$ 0,00</strong>
+            </div>
+
+            <button id="finalizar-compra" class="btn-finalizar">Finalizar Compra</button>
+
+        </aside>
+
+        <!-- BOTÃO ESCONDIDO -->
+        <div id="menu-overlay" class="menu-overlay"></div>
+            <div id="menu-mobile" class="menu-mobile">
+                <a href=""><img class="icon-menu" src="img/Land Page/Perfil.png" alt="Perfil">Perfil</a>
+                <a href=""><img class="icon-menu" src="img/Land Page/Cupons.png" alt="">Cupons</a>
+                <a href=""><img class="icon-menu" src="img/Land Page/Configurações.png" alt="">Configurações</a>
+            </div>
+
+        <main>
+            <section class="avaliacoes-container">
+                <h2 class="titulo-avaliacoes">
+                    Avaliações dos Clientes
+                </h2>
+
+                <div class="avaliacao-card">
+                    <img src="img/Avaliadores/Taylor.png" alt="estrela" class="icon-estrela"> 
+                    <p class="avaliacao-nome">Taylor Swift – Bairro Brasília</p>
+                    <p class="avaliacao-estrelas">★★★★★</p>
+                    <p class="avaliacao-texto">
+                        “Além da variedade de produtos, o serviço de entrega facilita muito o dia a dia. <br> Sempre chega tudo certinho e rápido.”
+                    </p>
+                </div>
+                <div class="avaliacao-card">
+                    <img src="img/Avaliadores/Djvan.png" alt="estrela" class="icon-estrela">
+                    <p class="avaliacao-nome">Djvan – Bairro Beija-Flor</p>
+                    <p class="avaliacao-estrelas">★★★★★</p>
+                    <p class="avaliacao-texto">
+                        “Mercado completo, preços justos e atendimento excelente. <br> Sempre encontro frutas e verduras bem fresquinhas.”
+                    </p>
+                </div>
+                <div class="avaliacao-card">
+                    <img src="img/Avaliadores/Tom.png" alt="estrela" class="icon-estrela">
+                    <p class="avaliacao-nome">Tom Jobim – Guanambi Centro</p>
+                    <p class="avaliacao-estrelas">★★★★★</p>
+                    <p class="avaliacao-texto">
+                        “Gosto muito do açougue do Mercado do Zé, carne sempre de qualidade, recomendo demais!”
+                    </p>
+                </div>
+                <div class="avaliacao-card">
+                    <img src="img/Avaliadores/Casemiro.png" alt="estrela" class="icon-estrela">
+                    <p class="avaliacao-nome">Casimiro Miguel – Bairro Renascer</p>
+                    <p class="avaliacao-estrelas">★★★★</p>
+                    <p class="avaliacao-texto">
+                        “Ambiente organizado, funcionários atenciosos. <br> Só poderia ter mais opções de produtos integrais, mas no geral é ótimo.”
+                    </p>
+                </div>
+                <div class="avaliacao-card">
+                    <img src="img/Avaliadores/Gonzaghinha.png" alt="estrela" class="icon-estrela">
+                    <p class="avaliacao-nome">Gonzaghinha – Bairro Ipanema</p>
+                    <p class="avaliacao-estrelas">★★★★★</p>
+                    <p class="avaliacao-texto">
+                        “Mercado que já virou tradição no bairro. Sempre tem promoções boas e o atendimento é nota 10.”
+                    </p>
+                </div>
+            </section>
+
+            <a href="#topo" class="voltar-topo">
+                    Voltar ao início <span><img src="img/Land Page/Seta inicio.png" alt=""></span>
+            </a>
+            <section class="banner-meio">
+                <img src="img/Land Page/Rodapealt.png" alt="">
+            </section>
+        </main>
+
+    <footer class="footer">
+        <div id = "footer"></div>
+        <div class="footer-container">
+
+            <!-- COLUNA 1 – LOGO -->
+            <div class="col logo-col">
+                <a href="index.html"><img src="img/Land Page/Logo.png" alt="Logo do Mercado do Zé"></a>
+            </div>
+
+            <!-- LINHA VERTICAL -->
+            <div class="divider"></div>
+
+            <!-- COLUNA 2 – CONTATOS PARTE 1 -->
+            <div class="col contatos1">
+                <p><img src="img/Land Page/Telefone.png" alt=""> (77) 99546-3348</p>
+                <p><img src="img/Land Page/E-mail.png" alt=""> mercadodoze@gmail.com</p>
+            </div>
+
+            <!-- LINHA VERTICAL -->
+            <div class="divider"></div>
+
+            <!-- COLUNA 3 – CONTATOS PARTE 2 -->
+            <div class="col contatos2">
+                <p><img src="img/Land Page/Instagram.png" alt=""> @mercadodozé</p>
+                <p><img src="img/Land Page/Whatzap.jpg" alt=""> (77) 9546-3348</p>
+            </div>
+
+            <!-- LINHA VERTICAL -->
+            <div class="divider"></div>
+
+            <!-- COLUNA 4 – LINKS RÁPIDOS -->
+            <div class="col links">
+                <a href="Sobrenos.html">Sobre nós</a>
+                <a href="Produtos.html">Produtos</a>
+                <a href="#Avaliações">Avaliações</a>
+                <a href="Duvidas.html">Dúvidas</a>
+            </div>
+        </div>
+        <div class="direitos">
+            © 2025 Vitor Pizolato da Silva & Fausta Porto Couto — Todos os direitos reservados.
+        </div>
+    </footer>
+    <script src="JS/javascript.js"></script>
+</body>
+</html>

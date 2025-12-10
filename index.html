@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado do Zé</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body id = "topo">
+    <header id="header">
+        <div class="logo">
+            <img src="img/Land Page/Logo.png" alt="Logo Mercado do Zé">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Sobrenos.html">Sobre Nós</a></li>
+                <li><a href="Produtos.html">Produtos</a></li>
+                <li><a href="Duvidas.html">Dúvidas</a></li>
+                <li><a href="Avaliações.html">Avaliações</a></li>
+                <li><a href="#footer">Fale Conosco</a></li>
+            </ul>
+        </nav>
+
+        <div class="botoes">
+            <img id="abrir-carrinho" src="img/Land Page/Compras.png" alt="Carrinho">
+            <img id="menu-btn" src="img/Land Page/Menu.png" alt="Menu">
+        </div>
+    </header>
+    
+    <!-- OVERLAY DO CARRINHO -->
+    <div id="carrinho-overlay" class="carrinho-overlay"></div>
+
+    <!-- CARRINHO LATERAL -->
+    <aside id="carrinho" class="carrinho">
+
+        <h2 class="carrinho-titulo">Carrinho</h2>
+
+        <div id="carrinho-itens" class="carrinho-itens">
+            <!-- Os itens serão adicionados via JavaScript -->
+        </div>
+
+        <div class="carrinho-total">
+            <span>Total:</span>
+            <strong id="carrinho-total-valor">R$ 0,00</strong>
+        </div>
+
+        <button id="finalizar-compra" class="btn-finalizar">Finalizar Compra</button>
+
+    </aside>
+
+    <!-- BOTÃO ESCONDIDO Menu -->
+    <div id="menu-overlay" class="menu-overlay"></div>
+        <div id="menu-mobile" class="menu-mobile">
+            <a href=""><img class="icon-menu" src="img/Land Page/Perfil.png" alt="Perfil">Perfil</a>
+            <a href=""><img class="icon-menu" src="img/Land Page/Cupons.png" alt="">Cupons</a>
+            <a href=""><img class="icon-menu" src="img/Land Page/Configurações.png" alt="">Configurações</a>
+        </div>
+
+    <main>
+        <section class="principal">
+            <h1>MERCADO DO ZÉ</h1>
+            <p><i>Qualidade e Preço Justo</i></p>
+        </section>
+
+        <section id="ofertas" class="ofertas">
+            <div class="ofertas-left">
+                <h2>Ofertas do Dia</h2>
+                <a href="Produtos.html" class="btn-ver-todas">Ver Todas</a>
+            </div>
+            <div class="produtos-container">
+                <div class="produto">
+                    <a href="ProdInd.html?id=frango" class="produto">
+                        <img src="img/Produtos/Frango.png" alt="Frango Inteiro">
+                        <p>Frango Inteiro - Seara</p>
+                        <span>R$ 25,99</span>
+                    </a>
+                </div>
+                <div class="produto">
+                    <a href="ProdInd.html?id=mortadela" class="produto">
+                        <img src="img/Produtos/Mortandela.png" alt="Mortadela Defumada">
+                        <p>Mortadela Defumada - Seara</p>
+                        <span>R$ 11,99</span>
+                    </a>
+                </div>
+                <div class="produto">
+                    <a href="ProdInd.html?id=Sucrilhos" class="produto">
+                        <img src="img/Produtos/Sucrilhos.png" alt="Cereal Sucrilhos">
+                        <p>Cereal Sucrilhos - Kellogg’s</p>
+                        <span>R$ 7,99</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="porque">
+            <div class="texto">
+                <h2>Por que comprar no site do Mercado do Zé?</h2><br>
+                <p>No Mercado do Zé, pensamos no seu tempo e no seu bem-estar. Aqui você encontra todos os produtos que já conhece da nossa loja física, agora com a facilidade de escolher online e receber em casa.</p><br>
+                <p>🕒 <strong>Comodidade:</strong> faça suas compras a qualquer hora.</p>
+                <p>🚚 <strong>Rapidez:</strong> seu pedido chega com segurança e agilidade.</p>
+                <p>🛒 <strong>Variedade:</strong> tudo em um só lugar.</p>
+                <p>💰 <strong>Promoções exclusivas:</strong> ofertas especiais pelo site.</p>
+            </div>
+            <div class="card">
+                <a href="Produtos.html" class="btn-ver-todas"><img src="img/Land Page/Agora online!.png" alt="Logo de compra"></a>
+            </div>
+        </section>
+
+        <section id="ofertas" class="ofertas">
+            <div class="ofertas-left">
+                <h2>Novos Produtos</h2>
+                <a href="Produtos.html" class="btn-ver-todas">Ver Todos</a>
+            </div>
+            <div class="produtos-container">
+                <div class="produto">
+                    <a href="ProdInd.html?id=sabao" class="produto">
+                        <img src="img/Produtos/Sabão.png" alt="Sabão">
+                        <p>Sabão Liquido - Brilhante</p>
+                        <span>R$ 12,99</span>
+                    </a>
+                </div>
+                <div class="produto">
+                    <a href="ProdInd.html?id=Shampoo" class="produto">
+                        <img src="img/Produtos/Shampoo.png" alt="Shampoo">
+                        <p>Shampoo - Pantene</p>
+                        <span>R$ 24,99</span>
+                    </a>
+                </div>
+                <div class="produto">
+                    <a href="ProdInd.html?id=pepsi" class="produto">
+                        <img src="img/Produtos/pepsi.png" alt="Refrigerante Pepsi">
+                        <p>Refrigerente - Pepsi</p>
+                        <span>R$ 2,99</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <a href="#topo" class="voltar-topo">
+            Voltar ao início <span><img src="img/Land Page/Seta inicio.png" alt=""></span>
+        </a>
+        <section class="banner-meio">
+            <img src="img/Land Page/Rodapealt.png" alt="">
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div id = "footer"></div>
+        <div class="footer-container">
+
+            <!-- COLUNA 1 – LOGO -->
+            <div class="col logo-col">
+                <img src="img/Land Page/Logo.png" alt="Logo do Mercado do Zé">
+            </div>
+
+            <!-- LINHA VERTICAL -->
+            <div class="divider"></div>
+
+            <!-- COLUNA 2 – CONTATOS PARTE 1 -->
+            <div class="col contatos1">
+                <p><img src="img/Land Page/Telefone.png" alt=""> (77) 99546-3348</p>
+                <p><img src="img/Land Page/E-mail.png" alt=""> mercadodoze@gmail.com</p>
+            </div>
+
+            <!-- LINHA VERTICAL -->
+            <div class="divider"></div>
+
+            <!-- COLUNA 3 – CONTATOS PARTE 2 -->
+            <div class="col contatos2">
+                <p><img src="img/Land Page/Instagram.png" alt=""> @mercadodozé</p>
+                <p><img src="img/Land Page/Whatzap.jpg" alt=""> (77) 9546-3348</p>
+            </div>
+
+            <!-- LINHA VERTICAL -->
+            <div class="divider"></div>
+
+            <!-- COLUNA 4 – LINKS RÁPIDOS -->
+            <div class="col links">
+                <a href="Sobrenos.html">Sobre nós</a>
+                <a href="Produtos.html">Produtos</a>
+                <a href="Avaliações.html">Avaliações</a>
+                <a href="Duvidas.html">Dúvidas</a>
+            </div>
+        </div>
+        <div class="direitos">
+            © 2025 Vitor Pizolato da Silva & Fausta Porto Couto — Todos os direitos reservados.
+        </div>
+    </footer>
+    <script src="JS/javascript.js"></script>
+</body>
+</html>

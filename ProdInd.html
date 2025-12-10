@@ -1,0 +1,164 @@
+<<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado do Zé</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body id = "topo">
+    <header id= "header">
+        <div class="logo">
+            <a href="index.html"><img src="img/Land Page/Logo.png" alt="Logo Mercado do Zé"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Sobrenos.html">Sobre Nós</a></li>
+                <li><a href="Produtos.html">Produtos</a></li>
+                <li><a href="Duvidas.html">Dúvidas</a></li>
+                <li><a href="Avaliações.html">Avaliações</a></li>
+                <li><a href="#footer">Fale Conosco</a></li>
+            </ul>
+        </nav>
+
+        <div class="botoes">
+            <img id="abrir-carrinho" src="img/Land Page/Compras.png" alt="Carrinho">
+            <img id="menu-btn" src="img/Land Page/Menu.png" alt="Menu">
+        </div>
+    </header>
+
+    <!-- OVERLAY DO CARRINHO -->
+    <div id="carrinho-overlay" class="carrinho-overlay"></div>
+
+    <!-- CARRINHO LATERAL -->
+    <aside id="carrinho" class="carrinho">
+
+        <h2 class="carrinho-titulo">Carrinho</h2>
+
+        <div id="carrinho-itens" class="carrinho-itens">
+            <!-- Os itens serão adicionados via JavaScript -->
+        </div>
+
+        <div class="carrinho-total">
+            <span>Total:</span>
+            <strong id="carrinho-total-valor">R$ 0,00</strong>
+        </div>
+
+        <button id="finalizar-compra" class="btn-finalizar">Finalizar Compra</button>
+
+    </aside>
+
+
+    <!-- BOTÃO ESCONDIDO -->
+    <div id="menu-overlay" class="menu-overlay"></div>
+        <div id="menu-mobile" class="menu-mobile">
+            <a href=""><img class="icon-menu" src="img/Land Page/Perfil.png" alt="Perfil">Perfil</a>
+            <a href=""><img class="icon-menu" src="img/Land Page/Cupons.png" alt="">Cupons</a>
+            <a href=""><img class="icon-menu" src="img/Land Page/Configurações.png" alt="">Configurações</a>
+        </div>
+
+    <main>
+        <div class="produto-container">
+            <section class="produto-detalhe">
+                <div class="produto-img">
+                    <img id="produto-imagem" src="" alt="Imagem do produto">
+                </div>
+
+                <div class="produto-info">
+                    <h1 id="produto-nome"></h1>
+                    <p id="produto-preco" class="produto-preco"></p>
+                    <p id="produto-descricao"></p>
+
+                    <div class="quantidade-box">
+                    <button id="menos" class="btn-qnt">−</button>
+                    <span id="quantidade">1</span>
+                    <button id="mais" class="btn-qnt">+</button>
+                    </div>
+
+                    <div class="produto-botoes">
+                    <a id="btn-comprar" class="btn-comprar" href="#" target="_blank">Comprar</a>
+                    <button id="btn-add-carrinho" class="btn-carrinho">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section id="ofertas" class="ofertas">
+            <div class="ofertas-left">
+                <h2>Mais Produtos</h2>
+                <a href="Produtos.html" class="btn-ver-todas">Ver Todos</a>
+            </div>
+            <div class="produtos-container">
+                <div class="produto">
+                    <a href="ProdInd.html?id=picanha" class="produto">
+                        <img src="img/Produtos/Picanha.png" alt="Frango Inteiro">
+                        <p>Picanha - Frisa</p>
+                        <span>R$ 49,99</span>
+                    </a>
+                </div>
+                <div class="produto">
+                    <a href="ProdInd.html?id=coca" class="produto">
+                        <img src="img/Produtos/Coca cola.png" alt="Mortadela Defumada">
+                        <p>Refrigerante - Coca-Cola</p>
+                        <span>R$: 8,99</span>
+                    </a>
+                </div>
+                <div class="produto">
+                    <a href="ProdInd.html?id=51" class="produto">
+                        <img src="img/Produtos/51.png" alt="Cereal Sucrilhos">
+                        <p>Cachaça Tradicional - 51</p>
+                        <span>R$: 18,99</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="banner-meio">
+            <img src="img/Land Page/Rodapealt.png" alt="">
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div id="footer"></div>
+        <div class="footer-container">
+
+            <!-- COLUNA 1 – LOGO -->
+            <div class="col logo-col">
+                <a href="index.html"><img src="img/Land Page/Logo.png" alt="Logo do Mercado do Zé"></a>
+            </div>
+
+            <!-- LINHA VERTICAL -->
+            <div class="divider"></div>
+
+            <!-- COLUNA 2 – CONTATOS PARTE 1 -->
+            <div class="col contatos1">
+                <p><img src="img/Land Page/Telefone.png" alt=""> (77) 99546-3348</p>
+                <p><img src="img/Land Page/E-mail.png" alt=""> mercadodoze@gmail.com</p>
+            </div>
+
+            <!-- LINHA VERTICAL -->
+            <div class="divider"></div>
+
+            <!-- COLUNA 3 – CONTATOS PARTE 2 -->
+            <div class="col contatos2">
+                <p><img src="img/Land Page/Instagram.png" alt=""> @mercadodozé</p>
+                <p><img src="img/Land Page/Whatzap.jpg" alt=""> (77) 9546-3348</p>
+            </div>
+
+            <!-- LINHA VERTICAL -->
+            <div class="divider"></div>
+
+            <!-- COLUNA 4 – LINKS RÁPIDOS -->
+            <div class="col links">
+                <a href="Sobrenos.html">Sobre nós</a>
+                <a href="Produtos.html">Produtos</a>
+                <a href="Avaliações.html">Avaliações</a>
+                <a href="Duvidas.html">Dúvidas</a>
+            </div>
+        </div>
+        <div class="direitos">
+            © 2025 Vitor Pizolato da Silva & Fausta Porto Couto — Todos os direitos reservados.
+        </div>
+    </footer>
+    <script src="JS/javascript.js"></script>
+    <script src="JS/produtos.js"></script>
+</body>
+</html>
