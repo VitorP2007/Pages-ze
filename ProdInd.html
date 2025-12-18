@@ -23,7 +23,9 @@
 
         <div class="botoes">
             <img id="abrir-carrinho" src="img/Land Page/Compras.png" alt="Carrinho">
-            <img id="menu-btn" src="img/Land Page/Menu.png" alt="Menu">
+            <div class="Margin">
+                <img id="menu-btn" src="img/Land Page/Menu.png" alt="Menu">
+            </div> 
         </div>
     </header>
 
@@ -52,64 +54,101 @@
     <!-- BOTÃO ESCONDIDO -->
     <div id="menu-overlay" class="menu-overlay"></div>
         <div id="menu-mobile" class="menu-mobile">
+            <a href="Sobrenos.html" class="link-pagina">
+                <img class="icon-menu" src="img/Land Page/botao-de-informacao.png" alt="">
+                Sobre Nós
+            </a>
+
+            <a href="Produtos.html" class="link-pagina">
+                <img class="icon-menu" src="img/Land Page/produtos.png" alt="">
+                Produtos
+            </a>
+
+            <a href="Duvidas.html" class="link-pagina">
+                <img class="icon-menu" src="img/Land Page/confuso.png" alt="">
+                Dúvidas
+            </a>
+
+            <a href="Avaliações.html" class="link-pagina">
+                <img class="icon-menu" src="img/Land Page/avaliacoes.png" alt="">
+                Avaliações
+            </a>
+
+            <a href="#footer" class="link-pagina">
+                <img class="icon-menu" src="img/Land Page/falando.png" alt="">
+                Fale Conosco
+            </a>
             <a href=""><img class="icon-menu" src="img/Land Page/Perfil.png" alt="Perfil">Perfil</a>
             <a href=""><img class="icon-menu" src="img/Land Page/Cupons.png" alt="">Cupons</a>
             <a href=""><img class="icon-menu" src="img/Land Page/Configurações.png" alt="">Configurações</a>
         </div>
 
     <main>
-        <div class="produto-container">
-            <section class="produto-detalhe">
-                <div class="produto-img">
-                    <img id="produto-imagem" src="" alt="Imagem do produto">
-                </div>
-
-                <div class="produto-info">
-                    <h1 id="produto-nome"></h1>
-                    <p id="produto-preco" class="produto-preco"></p>
-                    <p id="produto-descricao"></p>
-
-                    <div class="quantidade-box">
-                    <button id="menos" class="btn-qnt">−</button>
-                    <span id="quantidade">1</span>
-                    <button id="mais" class="btn-qnt">+</button>
+            <div class="produto-container">
+                <section class="produto-detalhe">
+                    <div class="produto-img">
+                        <img id="produto-imagem" src="" alt="Imagem do produto">
                     </div>
 
-                    <div class="produto-botoes">
-                    <a id="btn-comprar" class="btn-comprar" href="#" target="_blank">Comprar</a>
-                    <button id="btn-add-carrinho" class="btn-carrinho">Adicionar ao carrinho</button>
+                    <div class="produto-info">
+                        <h1 id="produto-nome"></h1>
+                        <p id="produto-preco" class="produto-preco"></p>
+                        <p id="produto-descricao"></p>
+
+                        <div class="quantidade-box">
+                        <button id="menos" class="btn-qnt">−</button>
+                        <span id="quantidade">1</span>
+                        <button id="mais" class="btn-qnt">+</button>
+                        </div>
+
+                        <div class="produto-botoes">
+                        <a id="btn-comprar" class="btn-comprar" href="#" target="_blank">Comprar</a>
+                        <button id="btn-add-carrinho" class="btn-carrinho">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        <section class="Max"> 
+            <section id="ofertas" class="ofertas">
+                <div class="ofertas-left">
+                    <h2>Mais Produtos</h2>
+                    <a href="Produtos.html" class="btn-ver-todas">Ver Todos</a>
+                </div>
+                <div class="produtos-container">
+                    <div class="carousel">
+                        <div class="carousel-track">
+                            <div class="carousel-item">
+                                <div class="produto">
+                                    <a href="ProdInd.html?id=picanha" class="produto">
+                                        <img src="img/Produtos/Picanha.png" alt="Frango Inteiro">
+                                        <p>Picanha - Frisa</p>
+                                        <span>R$ 49,99</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="produto">
+                                    <a href="ProdInd.html?id=coca" class="produto">
+                                        <img src="img/Produtos/Coca cola.png" alt="Mortadela Defumada">
+                                        <p>Refrigerante - Coca-Cola</p>
+                                        <span>R$: 8,99</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="produto">
+                                    <a href="ProdInd.html?id=51" class="produto">
+                                        <img src="img/Produtos/51.png" alt="Cereal Sucrilhos">
+                                        <p>Cachaça Tradicional - 51</p>
+                                        <span>R$: 18,99</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-dots"></div>
                     </div>
                 </div>
             </section>
-        </div>
-        <section id="ofertas" class="ofertas">
-            <div class="ofertas-left">
-                <h2>Mais Produtos</h2>
-                <a href="Produtos.html" class="btn-ver-todas">Ver Todos</a>
-            </div>
-            <div class="produtos-container">
-                <div class="produto">
-                    <a href="ProdInd.html?id=picanha" class="produto">
-                        <img src="img/Produtos/Picanha.png" alt="Frango Inteiro">
-                        <p>Picanha - Frisa</p>
-                        <span>R$ 49,99</span>
-                    </a>
-                </div>
-                <div class="produto">
-                    <a href="ProdInd.html?id=coca" class="produto">
-                        <img src="img/Produtos/Coca cola.png" alt="Mortadela Defumada">
-                        <p>Refrigerante - Coca-Cola</p>
-                        <span>R$: 8,99</span>
-                    </a>
-                </div>
-                <div class="produto">
-                    <a href="ProdInd.html?id=51" class="produto">
-                        <img src="img/Produtos/51.png" alt="Cereal Sucrilhos">
-                        <p>Cachaça Tradicional - 51</p>
-                        <span>R$: 18,99</span>
-                    </a>
-                </div>
-            </div>
         </section>
         <section class="banner-meio">
             <img src="img/Land Page/Rodapealt.png" alt="">
