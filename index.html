@@ -23,7 +23,9 @@
 
         <div class="botoes">
             <img id="abrir-carrinho" src="img/Land Page/Compras.png" alt="Carrinho">
-            <img id="menu-btn" src="img/Land Page/Menu.png" alt="Menu">
+            <div class="Margin">
+                <img id="menu-btn" src="img/Land Page/Menu.png" alt="Menu">
+            </div> 
         </div>
     </header>
     
@@ -32,7 +34,6 @@
 
     <!-- CARRINHO LATERAL -->
     <aside id="carrinho" class="carrinho">
-
         <h2 class="carrinho-titulo">Carrinho</h2>
 
         <div id="carrinho-itens" class="carrinho-itens">
@@ -45,95 +46,142 @@
         </div>
 
         <button id="finalizar-compra" class="btn-finalizar">Finalizar Compra</button>
-
     </aside>
 
     <!-- BOTÃO ESCONDIDO Menu -->
     <div id="menu-overlay" class="menu-overlay"></div>
         <div id="menu-mobile" class="menu-mobile">
+            <a href="Sobrenos.html" class="link-pagina">
+                <img class="icon-menu" src="img/Land Page/botao-de-informacao.png" alt="">
+                Sobre Nós
+            </a>
+
+            <a href="Produtos.html" class="link-pagina">
+                <img class="icon-menu" src="img/Land Page/produtos.png" alt="">
+                Produtos
+            </a>
+
+            <a href="Duvidas.html" class="link-pagina">
+                <img class="icon-menu" src="img/Land Page/confuso.png" alt="">
+                Dúvidas
+            </a>
+
+            <a href="Avaliações.html" class="link-pagina">
+                <img class="icon-menu" src="img/Land Page/avaliacoes.png" alt="">
+                Avaliações
+            </a>
+
+            <a href="#footer" class="link-pagina">
+                <img class="icon-menu" src="img/Land Page/falando.png" alt="">
+                Fale Conosco
+            </a>
             <a href=""><img class="icon-menu" src="img/Land Page/Perfil.png" alt="Perfil">Perfil</a>
             <a href=""><img class="icon-menu" src="img/Land Page/Cupons.png" alt="">Cupons</a>
             <a href=""><img class="icon-menu" src="img/Land Page/Configurações.png" alt="">Configurações</a>
         </div>
 
     <main>
-        <section class="principal">
-            <h1>MERCADO DO ZÉ</h1>
-            <p><i>Qualidade e Preço Justo</i></p>
-        </section>
+        <section class="Max">
+            <section class="principal">
+                <h1>MERCADO DO ZÉ</h1>
+                <p><i>Qualidade e Preço Justo</i></p>
+            </section>
 
-        <section id="ofertas" class="ofertas">
-            <div class="ofertas-left">
-                <h2>Ofertas do Dia</h2>
-                <a href="Produtos.html" class="btn-ver-todas">Ver Todas</a>
-            </div>
-            <div class="produtos-container">
-                <div class="produto">
-                    <a href="ProdInd.html?id=frango" class="produto">
-                        <img src="img/Produtos/Frango.png" alt="Frango Inteiro">
-                        <p>Frango Inteiro - Seara</p>
-                        <span>R$ 25,99</span>
-                    </a>
+            <section id="ofertas" class="ofertas">
+                <div class="ofertas-left">
+                    <h2>Ofertas do Dia</h2>
+                    <a href="Produtos.html" class="btn-ver-todas">Ver Todas</a>
                 </div>
-                <div class="produto">
-                    <a href="ProdInd.html?id=mortadela" class="produto">
-                        <img src="img/Produtos/Mortandela.png" alt="Mortadela Defumada">
-                        <p>Mortadela Defumada - Seara</p>
-                        <span>R$ 11,99</span>
-                    </a>
+                <div class="produtos-container">
+                    <div class="carousel">
+                        <div class="carousel-track">
+                                    <div class="carousel-item">
+                                        <div class="produto">
+                                            <a href="ProdInd.html?id=frango" class="produto">
+                                                <img src="img/Produtos/Frango.png" alt="Frango Inteiro">
+                                                <p>Frango Inteiro - Seara</p>
+                                                <span>R$ 25,99</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="produto">
+                                            <a href="ProdInd.html?id=mortadela" class="produto">
+                                                <img src="img/Produtos/Mortandela.png" alt="Mortadela Defumada">
+                                                <p>Mortadela Defumada - Seara</p>
+                                                <span>R$ 11,99</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="produto">
+                                            <a href="ProdInd.html?id=Sucrilhos" class="produto">
+                                                <img src="img/Produtos/Sucrilhos.png" alt="Cereal Sucrilhos">
+                                                <p>Cereal Sucrilhos - Kellogg’s</p>
+                                                <span>R$ 7,99</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="carousel-dots"></div>
+                    </div>
                 </div>
-                <div class="produto">
-                    <a href="ProdInd.html?id=Sucrilhos" class="produto">
-                        <img src="img/Produtos/Sucrilhos.png" alt="Cereal Sucrilhos">
-                        <p>Cereal Sucrilhos - Kellogg’s</p>
-                        <span>R$ 7,99</span>
-                    </a>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="porque">
-            <div class="texto">
-                <h2>Por que comprar no site do Mercado do Zé?</h2><br>
-                <p>No Mercado do Zé, pensamos no seu tempo e no seu bem-estar. Aqui você encontra todos os produtos que já conhece da nossa loja física, agora com a facilidade de escolher online e receber em casa.</p><br>
-                <p>🕒 <strong>Comodidade:</strong> faça suas compras a qualquer hora.</p>
-                <p>🚚 <strong>Rapidez:</strong> seu pedido chega com segurança e agilidade.</p>
-                <p>🛒 <strong>Variedade:</strong> tudo em um só lugar.</p>
-                <p>💰 <strong>Promoções exclusivas:</strong> ofertas especiais pelo site.</p>
-            </div>
-            <div class="card">
-                <a href="Produtos.html" class="btn-ver-todas"><img src="img/Land Page/Agora online!.png" alt="Logo de compra"></a>
-            </div>
-        </section>
+            <section class="porque">
+                <div class="texto">
+                    <h2>Por que comprar no site do Mercado do Zé?</h2><br>
+                    <p>No Mercado do Zé, pensamos no seu tempo e no seu bem-estar. Aqui você encontra todos os produtos que já conhece da nossa loja física, agora com a facilidade de escolher online e receber em casa.</p><br>
+                    <p>🕒 <strong>Comodidade:</strong> faça suas compras a qualquer hora.</p>
+                    <p>🚚 <strong>Rapidez:</strong> seu pedido chega com segurança e agilidade.</p>
+                    <p>🛒 <strong>Variedade:</strong> tudo em um só lugar.</p>
+                    <p>💰 <strong>Promoções exclusivas:</strong> ofertas especiais pelo site.</p>
+                </div>
+                <div class="card">
+                    <a href="Produtos.html" class="btn-ver-todas"><img src="img/Land Page/Agora online!.png" alt="Logo de compra"></a>
+                </div>
+            </section>
 
-        <section id="ofertas" class="ofertas">
-            <div class="ofertas-left">
-                <h2>Novos Produtos</h2>
-                <a href="Produtos.html" class="btn-ver-todas">Ver Todos</a>
-            </div>
-            <div class="produtos-container">
-                <div class="produto">
-                    <a href="ProdInd.html?id=sabao" class="produto">
-                        <img src="img/Produtos/Sabão.png" alt="Sabão">
-                        <p>Sabão Liquido - Brilhante</p>
-                        <span>R$ 12,99</span>
-                    </a>
+            <section id="ofertas" class="ofertas">
+                <div class="ofertas-left">
+                    <h2>Novos Produtos</h2>
+                    <a href="Produtos.html" class="btn-ver-todas">Ver Todos</a>
                 </div>
-                <div class="produto">
-                    <a href="ProdInd.html?id=Shampoo" class="produto">
-                        <img src="img/Produtos/Shampoo.png" alt="Shampoo">
-                        <p>Shampoo - Pantene</p>
-                        <span>R$ 24,99</span>
-                    </a>
+                <div class="produtos-container">
+                    <div class="carousel">
+                            <div class="carousel-track">
+                                <div class="carousel-item">
+                                    <div class="produto">
+                                        <a href="ProdInd.html?id=sabao" class="produto">
+                                            <img src="img/Produtos/Sabão.png" alt="Sabão">
+                                            <p>Sabão Liquido - Brilhante</p>
+                                            <span>R$ 12,99</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="produto">
+                                        <a href="ProdInd.html?id=Shampoo" class="produto">
+                                            <img src="img/Produtos/Shampoo.png" alt="Shampoo">
+                                            <p>Shampoo - Pantene</p>
+                                            <span>R$ 24,99</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="produto">
+                                        <a href="ProdInd.html?id=pepsi" class="produto">
+                                            <img src="img/Produtos/pepsi.png" alt="Refrigerante Pepsi">
+                                            <p>Refrigerente - Pepsi</p>
+                                            <span>R$ 2,99</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="carousel-dots"></div>
+                    </div>
                 </div>
-                <div class="produto">
-                    <a href="ProdInd.html?id=pepsi" class="produto">
-                        <img src="img/Produtos/pepsi.png" alt="Refrigerante Pepsi">
-                        <p>Refrigerente - Pepsi</p>
-                        <span>R$ 2,99</span>
-                    </a>
-                </div>
-            </div>
+            </section>
         </section>
         <a href="#topo" class="voltar-topo">
             Voltar ao início <span><img src="img/Land Page/Seta inicio.png" alt=""></span>

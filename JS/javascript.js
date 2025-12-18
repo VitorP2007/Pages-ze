@@ -295,3 +295,98 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+/* =========================================================*/
+document.addEventListener('DOMContentLoaded', () => {
+
+  let carouselAtivo = false;
+
+  function iniciarCarouselMobile() {
+    if (carouselAtivo) return;
+
+    document.querySelectorAll('.carousel').forEach(carousel => {
+
+      const track = carousel.querySelector('.carousel-track');
+      const items = carousel.querySelectorAll('.carousel-item');
+      const dotsContainer = carousel.querySelector('.carousel-dots');
+
+      if (!track || !dotsContainer) return;
+
+      dotsContainer.innerHTML = '';
+
+      let index = 0;
+      let startX = 0;
+      let currentX = 0;
+      let dragging = false;
+
+      items.forEach((_, i) => {
+        const dot = document.createElement('button');
+        if (i === 0) dot.classList.add('active');
+        dotsContainer.appendChild(dot);
+
+        dot.addEventListener('click', () => {
+          index = i;
+          update();
+        });
+      });
+
+      const dots = dotsContainer.querySelectorAll('button');
+
+      function update() {
+        track.style.transform = `translateX(-${index * 100}%)`;
+        dots.forEach(dot => dot.classList.remove('active'));
+        if (dots[index]) dots[index].classList.add('active');
+      }
+
+      track.addEventListener('touchstart', e => {
+        startX = e.touches[0].clientX;
+        dragging = true;
+      });
+
+      track.addEventListener('touchmove', e => {
+        if (!dragging) return;
+        currentX = e.touches[0].clientX;
+      });
+
+      track.addEventListener('touchend', () => {
+        const diff = startX - currentX;
+
+        if (diff > 50 && index < items.length - 1) index++;
+        if (diff < -50 && index > 0) index--;
+
+        update();
+        dragging = false;
+      });
+
+      update();
+    });
+
+    carouselAtivo = true;
+  }
+
+  function destruirCarouselDesktop() {
+    if (!carouselAtivo) return;
+
+    document.querySelectorAll('.carousel').forEach(carousel => {
+      const track = carousel.querySelector('.carousel-track');
+      const dotsContainer = carousel.querySelector('.carousel-dots');
+
+      if (track) track.style.transform = '';
+      if (dotsContainer) dotsContainer.innerHTML = '';
+    });
+
+    carouselAtivo = false;
+  }
+
+  function verificarModo() {
+    if (window.innerWidth <= 768) {
+      iniciarCarouselMobile();
+    } else {
+      destruirCarouselDesktop();
+    }
+  }
+
+  verificarModo();
+  window.addEventListener('resize', verificarModo);
+
+});

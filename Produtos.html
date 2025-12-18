@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -23,7 +23,9 @@
 
         <div class="botoes">
             <img id="abrir-carrinho" src="img/Land Page/Compras.png" alt="Carrinho">
-            <img id="menu-btn" src="img/Land Page/Menu.png" alt="Menu">
+            <div class="Margin">
+                <img id="menu-btn" src="img/Land Page/Menu.png" alt="Menu">
+            </div> 
         </div>
     </header>
 
@@ -32,7 +34,6 @@
 
     <!-- CARRINHO LATERAL -->
     <aside id="carrinho" class="carrinho">
-
         <h2 class="carrinho-titulo">Carrinho</h2>
 
         <div id="carrinho-itens" class="carrinho-itens">
@@ -45,216 +46,218 @@
         </div>
 
         <button id="finalizar-compra" class="btn-finalizar">Finalizar Compra</button>
-
     </aside>
 
     <!-- BOTÃO ESCONDIDO -->
     <div id="menu-overlay" class="menu-overlay"></div>
         <div id="menu-mobile" class="menu-mobile">
+            <a href="Sobrenos.html" class="link-pagina">
+                <img class="icon-menu" src="img/Land Page/botao-de-informacao.png" alt="">
+                Sobre Nós
+            </a>
+
+            <a href="Produtos.html" class="link-pagina">
+                <img class="icon-menu" src="img/Land Page/produtos.png" alt="">
+                Produtos
+            </a>
+
+            <a href="Duvidas.html" class="link-pagina">
+                <img class="icon-menu" src="img/Land Page/confuso.png" alt="">
+                Dúvidas
+            </a>
+
+            <a href="Avaliações.html" class="link-pagina">
+                <img class="icon-menu" src="img/Land Page/avaliacoes.png" alt="">
+                Avaliações
+            </a>
+
+            <a href="#footer" class="link-pagina">
+                <img class="icon-menu" src="img/Land Page/falando.png" alt="">
+                Fale Conosco
+            </a>
             <a href=""><img class="icon-menu" src="img/Land Page/Perfil.png" alt="Perfil">Perfil</a>
             <a href=""><img class="icon-menu" src="img/Land Page/Cupons.png" alt="">Cupons</a>
             <a href=""><img class="icon-menu" src="img/Land Page/Configurações.png" alt="">Configurações</a>
         </div>
 
     <main>
-        <section class="pricipal_produtos"></section>
-            <div class="barra-pesquisa">
-                <img src="img/Land Page/Lupa.png" class="icone-pesquisa" alt="Buscar">
-                <input type="text" id="barra-pesquisa" placeholder="Pesquisar por Produto">
-                <div id="resultado-pesquisa" class="resultado-pesquisa"></div>
-            </div>
+        <section class="Max">   
+            <section class="pricipal_produtos"></section>
+                <div class="barra-pesquisa">
+                    <img src="img/Land Page/Lupa.png" class="icone-pesquisa" alt="Buscar">
+                    <input type="text" id="barra-pesquisa" placeholder="Pesquisar por Produto">
+                    <div id="resultado-pesquisa" class="resultado-pesquisa"></div>
+                </div>
+        </section> 
+        <section class="acesso-rapido" id="acesso-rapido">
 
-            <section class="acesso-rapido">
-                <div class="categorias">
-                    <div class="categoria">
-                        <a href="#frios"><img src="img/Land Page/Frios.png" alt=""></a>
-                        <p>Frios</p>
-                    </div>
-                    <div class="categoria">
-                        <a href="#limpeza"><img src="img/Land Page/Limpeza.png" alt=""></a>
-                        <p>Limpeza</p>
-                    </div>
-                    <div class="categoria">
-                        <a href="#bebidas"><img src="img/Land Page/Bebidas.png" alt=""></a>
-                        <p>Bebidas</p>
-                    </div>
-                    <div class="categoria">
-                        <a href="#marcenaria"><img src="img/Land Page/Marcenaria.png" alt=""></a>
-                        <p>Mercearia</p>
-                    </div>
-                    <div class="categoria">
-                        <a href="#alimentos"><img src="img/Land Page/Alimentos.png" alt=""></a>
-                        <p>Alimentos</p>
-                    </div>
-                    <div class="categoria">
-                        <a href="#Higiene"><img src="img/Land Page/Higiene.png" alt=""></a>
-                        <p>Higiene</p>
-                    </div>
-                    <div class="categoria">
-                        <a href="#Padaria"><img src="img/Land Page/padaria.png" alt=""></a>
-                        <p>Padaria</p>
-                    </div>
-                    <div class="categoria">
-                        <a href="#Laticínios"><img src="img/Land Page/Laticínios.png" alt=""></a>
-                        <p>Laticínios</p>
-                    </div>
+            <div class="categorias">
+
+                <a href="#frios" class="categoria">
+                <img src="img/Land Page/Frios.png" alt="Frios">
+                <p>Frios</p>
+                </a>
+
+                <a href="#limpeza" class="categoria">
+                <img src="img/Land Page/Limpeza.png" alt="Limpeza">
+                <p>Limpeza</p>
+                </a>
+
+                <a href="#bebidas" class="categoria">
+                <img src="img/Land Page/Bebidas.png" alt="Bebidas">
+                <p>Bebidas</p>
+                </a>
+
+                <a href="#mercearia" class="categoria">
+                <img src="img/Land Page/Marcenaria.png" alt="Mercearia">
+                <p>Mercearia</p>
+                </a>
+
+                <a href="#alimentos" class="categoria">
+                <img src="img/Land Page/Alimentos.png" alt="Alimentos">
+                <p>Alimentos</p>
+                </a>
+
+                <a href="#Higiene" class="categoria">
+                <img src="img/Land Page/Higiene.png" alt="Higiene">
+                <p>Higiene</p>
+                </a>
+
+                <a href="#Padaria" class="categoria">
+                <img src="img/Land Page/padaria.png" alt="Padaria">
+                <p>Padaria</p>
+                </a>
+
+                <a href="#Laticínios" class="categoria">
+                <img src="img/Land Page/Laticínios.png" alt="Laticínios">
+                <p>Laticínios</p>
+                </a>
+
+            </div>
+        </section>
+
+            
+        <section class="Max"> 
+            <section class="categoria-bloco" id="Frios">
+                        <div class="categoria-container">
+
+                            <!-- Ícone da categoria -->
+                            <div class="cat-icone">
+                                <div class="categoria-bloco h2">
+                                    <h2>Frios</h2>
+                                </div>
+                                <img src="img/Land Page/Frios.png" alt="Frios">
+                            </div>
+
+                                <!-- Seta esquerda -->
+                            <div class="seta-prod img">
+                                <img src="img/Land Page/SetaBranca.png" alt="">
+                            </div>
+
+                            <!-- Lista de produtos -->
+                            <div class="produtos-lista">
+                                <div class="carousel">
+                                    <div class="carousel-track">
+                                        <div class="carousel-item">
+                                            <div class="produto">
+                                                <a href="ProdInd.html?id=frango" class="produto">
+                                                    <img src="img/Produtos/Frango.png">
+                                                    <p>Frango Inteiro - Seara<br><strong>R$: 25,99</strong></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="produto">
+                                                <a href="ProdInd.html?id=mortadela" class="produto">
+                                                    <img src="img/Produtos/Mortandela.png">
+                                                    <p>Mortadela Defumada - Seara<br><strong>R$: 11,99</strong></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="produto">
+                                                <a href="ProdInd.html?id=picanha" class="produto">
+                                                    <img src="img/Produtos/Picanha.png">
+                                                    <p>Carne de Boi Picanha - Frisa<br><strong>R$: 49,99</strong></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-dots"></div>
+                                </div>
+                            </div>
+
+                            <!-- Seta direita -->
+                            <div class="seta-prod img">
+                                <img src="img/Land Page/SetaBranca Dir.png" alt="">
+                            </div>
+                        </div>
             </section>
-        </section>
 
-        <section class="categoria-bloco">
-            <div class="categoria-container">
+            <section class="categoria-bloco" id="limpeza">
+                    <div class="categoria-containerbra">
 
-                <!-- Ícone da categoria -->
-                <div class="cat-icone">
-                    <div class="categoria-bloco h2">
-                        <h2>Frios</h2>
-                    </div>
-                    <img src="img/Land Page/Frios.png" alt="Frios">
-                </div>
-
-                    <!-- Seta esquerda -->
-                <div class="seta-prod img">
-                    <img src="img/Land Page/SetaBranca.png" alt="">
-                </div>
-
-                <!-- Lista de produtos -->
-                <div class="produtos-lista">
-
-                    <div class="produto">
-                        <a href="ProdInd.html?id=frango" class="produto">
-                            <img src="img/Produtos/Frango.png">
-                            <p>Frango Inteiro - Seara<br><strong>R$: 25,99</strong></p>
-                        </a>
-                    </div>
-
-                    <div class="produto">
-                        <a href="ProdInd.html?id=mortadela" class="produto">
-                            <img src="img/Produtos/Mortandela.png">
-                            <p>Mortadela Defumada - Seara<br><strong>R$: 11,99</strong></p>
-                        </a>
-                    </div>
-
-                    <div class="produto">
-                        <a href="ProdInd.html?id=picanha" class="produto">
-                            <img src="img/Produtos/Picanha.png">
-                            <p>Carne de Boi Picanha - Frisa<br><strong>R$: 49,99</strong></p>
-                        </a>
-                    </div>
-
-                </div>
-
-                <!-- Seta direita -->
-                <div id="limpeza" class="seta-prod img">
-                    <img src="img/Land Page/SetaBranca Dir.png" alt="">
-                </div>
-
-            </div>
-        </section>
-
-        <section class="categoria-bloco">
-                <div class="categoria-containerbra">
-
-                     <!-- Ícone da categoria -->
-                    <div class="cat-iconeazul">
-                        <div class="categoria-bloco h2">
-                            <h2>Limpeza</h2>
-                        </div>
-                        <img src="img/Land Page/Limpeza.png" alt="">
-                    </div>
-
-                    <!-- Seta esquerda -->
-                    <div class="seta-prod img">
-                        <img src="img/Land Page/SetaBranca.png" alt="">
-                    </div>
-
-                    <!-- Lista de produtos -->
-                        <div class="produtos-lista">
-
-                            <div class="produto">
-                                <a href="ProdInd.html?id=sabao" class="produto">
-                                    <img src="img/Produtos/Sabão.png">
-                                    <p>Sabão Líquido - Brilhante<br><strong>R$: 12,99</strong></p>
-                                </a>
-                            </div>
-
-                            <div class="produto">
-                                <a href="ProdInd.html?id=veja" class="produto">
-                                    <img src="img/Produtos/Veja.png">
-                                    <p>Veja multiuso - Veja<br><strong>R$: 9,99</strong></p>
-                                </a>
-                            </div>
-
-                            <div class="produto">
-                                <a href="ProdInd.html?id=sabaoembarra" class="produto">
-                                    <img src="img/Produtos/Sabão barra.png">
-                                    <p>Sabão em Barra  - Ypê<br><strong>R$: 14,99</strong></p>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- Seta direita -->
-                        <div id = "bebidas" class="seta-prod img">
-                            <img src="img/Land Page/SetaBranca Dir.png" alt="">
-                        </div>
-                </div>
-        </section>
-
-        <section class="categoria-bloco">
-                <div class="categoria-container">
-
-                    <!-- Ícone da categoria -->
-                    <div class="cat-icone">
-                        <div class="categoria-bloco h2">
-                            <h2>Bebidas</h2>
-                        </div>
-                        <img src="img/Land Page/Bebidas.png" alt="Frios">
-                    </div>
-
-                        <!-- Seta esquerda -->
-                    <div class="seta-prod img">
-                        <img src="img/Land Page/SetaBranca.png" alt="">
-                    </div>
-
-                    <!-- Lista de produtos -->
-                    <div class="produtos-lista">
-
-                        <div class="produto">
-                            <a href="ProdInd.html?id=51" class="produto">
-                                <img src="img/Produtos/51.png">
-                                <p>Cachaça Tradicional - 51<br><strong>R$: 18,99</strong></p>
-                            </a>
-                        </div>
-
-                        <div class="produto">
-                            <a href="ProdInd.html?id=coca" class="produto">
-                                <img src="img/Produtos/Coca cola.png">
-                                <p>Refrigerante - Coca-Cola<br><strong>R$: 8,99</strong></p>
-                            </a>
-                        </div>
-
-                        <div class="produto">
-                            <a href="ProdInd.html?id=pepsi" class="produto">
-                                <img src="img/Produtos/pepsi.png">
-                                <p>Refrigerante - Pepsi<br><strong>R$: 2,99</strong></p>
-                            </a>
-                        </div>
-
-                    </div>
-
-                    <!-- Seta direita -->
-                    <div id="marcenaria" class="seta-prod img">
-                        <img src="img/Land Page/SetaBranca Dir.png" alt="">
-                    </div>
-                </div>
-        </section>
-
-        <section class="categoria-bloco">
-                <div class="categoria-containerbra">
                         <!-- Ícone da categoria -->
                         <div class="cat-iconeazul">
                             <div class="categoria-bloco h2">
-                                <h2>Mercearia</h2>
+                                <h2>Limpeza</h2>
                             </div>
-                            <img src="img/Land Page/Marcenaria.png" alt="">
+                            <img src="img/Land Page/Limpeza.png" alt="">
+                        </div>
+
+                        <!-- Seta esquerda -->
+                        <div class="seta-prod img">
+                            <img src="img/Land Page/SetaBranca.png" alt="">
+                        </div>
+
+                        <!-- Lista de produtos -->
+                            <div class="produtos-lista">
+                                <div class="carousel">
+                                    <div class="carousel-track">
+                                        <div class="carousel-item">
+                                            <div class="produto">
+                                                <a href="ProdInd.html?id=sabao" class="produto">
+                                                    <img src="img/Produtos/Sabão.png">
+                                                    <p>Sabão Líquido - Brilhante<br><strong>R$: 12,99</strong></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="produto">
+                                                <a href="ProdInd.html?id=veja" class="produto">
+                                                    <img src="img/Produtos/Veja.png">
+                                                    <p>Veja multiuso - Veja<br><strong>R$: 9,99</strong></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="produto">
+                                                <a href="ProdInd.html?id=sabaoembarra" class="produto">
+                                                    <img src="img/Produtos/Sabão barra.png">
+                                                    <p>Sabão em Barra  - Ypê<br><strong>R$: 14,99</strong></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-dots"></div> 
+                                </div>
+                            </div>
+                            <!-- Seta direita -->
+                            <div  class="seta-prod img">
+                                <img src="img/Land Page/SetaBranca Dir.png" alt="">
+                            </div>
+                    </div>
+            </section>
+
+            <section class="categoria-bloco" id = "bebidas">
+                    <div class="categoria-container">
+
+                        <!-- Ícone da categoria -->
+                        <div class="cat-icone">
+                            <div class="categoria-bloco h2">
+                                <h2>Bebidas</h2>
+                            </div>
+                            <img src="img/Land Page/Bebidas.png" alt="Frios">
                         </div>
 
                             <!-- Seta esquerda -->
@@ -264,227 +267,325 @@
 
                         <!-- Lista de produtos -->
                         <div class="produtos-lista">
-
-                            <div class="produto">
-                                <a href="ProdInd.html?id=arroz" class="produto">
-                                    <img src="img/Produtos/Arroz.png">
-                                    <p>Arroz Branco - Emoções<br><strong>R$: 5,99</strong></p>
-                                </a>
-                            </div>
-
-                            <div class="produto">
-                                <a href="ProdInd.html?id=oleo" class="produto">
-                                    <img src="img/Produtos/oleo.png">
-                                    <p>Óleo de Soja - Soya<br><strong>R$: 7,59</strong></p>
-                                </a>
-                            </div>
-
-                            <div class="produto">
-                                <a href="ProdInd.html?id=feijao" class="produto">
-                                    <img src="img/Produtos/Feijão.png">
-                                    <p>Feijão Carioca - Kicaldo<br><strong>R$: 6,99</strong></p>
-                                </a>
+                            <div class="carousel">
+                                <div class="carousel-track">
+                                    <div class="carousel-item">
+                                        <div class="produto">
+                                            <a href="ProdInd.html?id=51" class="produto">
+                                                <img src="img/Produtos/51.png">
+                                                <p>Cachaça Tradicional - 51<br><strong>R$: 18,99</strong></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="produto">
+                                            <a href="ProdInd.html?id=coca" class="produto">
+                                                <img src="img/Produtos/Coca cola.png">
+                                                <p>Refrigerante - Coca-Cola<br><strong>R$: 8,99</strong></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="produto">
+                                            <a href="ProdInd.html?id=pepsi" class="produto">
+                                                <img src="img/Produtos/pepsi.png">
+                                                <p>Refrigerante - Pepsi<br><strong>R$: 2,99</strong></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-dots"></div> 
                             </div>
                         </div>
 
                         <!-- Seta direita -->
-                        <div id="alimentos" class="seta-prod img">
+                        <div class="seta-prod img">
                             <img src="img/Land Page/SetaBranca Dir.png" alt="">
                         </div>
-                </div>
-        </section>
-
-        <section class="categoria-bloco">
-                <div class="categoria-container">
-
-                    <!-- Ícone da categoria -->
-                    <div class="cat-icone">
-                        <div class="categoria-bloco h2">
-                                <h2>Alimentos</h2>
-                        </div>
-                        <img src="img/Land Page/Alimentos.png" alt="Alimentos">
                     </div>
-
-                        <!-- Seta esquerda -->
-                    <div class="seta-prod img">
-                        <img src="img/Land Page/SetaBranca.png" alt="">
-                    </div>
-
-                    <!-- Lista de produtos -->
-                    <div class="produtos-lista">
-                        <div class="produto">
-                            <a href="ProdInd.html?id=maça" class="produto">
-                                <img src="img/Produtos//maça.png">
-                                <p>Maça Verde - Kg<br><strong>R$: 12,99</strong></p>
-                            </a>
-                        </div>
-
-                        <div class="produto">
-                            <a href="ProdInd.html?id=melancia" class="produto">
-                                <img src="img/Produtos/melancia.png">
-                                <p>Melancia - Kg<br><strong>R$: 4,69</strong></p>
-                            </a>
-                        </div>
-
-                        <div class="produto">
-                            <a href="ProdInd.html?id=uva" class="produto">
-                                <img src="img/Produtos/Uva.png">
-                                <p>Uva - Kg<br><strong>R$: 15,99</strong></p>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Seta direita -->
-                    <div id="Higiene" class="seta-prod img">
-                        <img src="img/Land Page/SetaBranca Dir.png" alt="">
-                    </div>
-                </div>
-        </section>
-
-        <div id="mais-categorias-extra" class="mais-categorias-extra escondido">
-            <section class="categoria-extra-bloco">
-                <div class="categoria-extra-container">
-                    <section class="categoria-bloco">
-                        <div class="categoria-containerbra">
-                            <!-- Ícone da categoria -->
-                            <div class="cat-iconeazul">
-                                <div class="categoria-bloco h2">
-                                        <h2>Higiene</h2>
-                                </div>
-                                <img src="img/Land Page/Higiene.png" alt="Higiene">
-                            </div>
-
-                            <!-- Seta esquerda -->
-                            <div class="seta-prod img">
-                                <img src="img/Land Page/SetaBranca.png" alt="">
-                            </div>
-
-                            <!-- Lista de produtos -->
-                                <div class="produtos-lista">
-
-                                    <div class="produto">
-                                        <a href="ProdInd.html?id=papel" class="produto">
-                                            <img src="img/Produtos/Papel.png">
-                                            <p>Papel Higiênico - Personal<br><strong>R$: 19,99</strong></p>
-                                        </a>
-                                    </div>
-
-                                    <div class="produto">
-                                        <a href="ProdInd.html?id=colgate" class="produto">
-                                            <img src="img/Produtos/Colgate.png">
-                                            <p>Creme Dental - Colgate<br><strong>R$: 5,99</strong></p>
-                                        </a>
-                                    </div>
-
-                                    <div class="produto">
-                                        <a href="ProdInd.html?id=Shampoo" class="produto">
-                                            <img src="img/Produtos/Shampoo.png">
-                                            <p>Shampoo - Pantene<br><strong>R$: 24,99</strong></p>
-                                        </a>
-                                    </div>
-                                </div>
-
-                            <!-- Seta direita -->
-                            <div id="Padaria" class="seta-prod img">
-                                 <img src="img/Land Page/SetaBranca Dir.png" alt="">
-                            </div>
-                        </div>
-                    </section>
-                    <section id="Laticínios" class="categoria-bloco">
-                        <div class="categoria-container">
-                            <!-- Ícone da categoria -->
-                            <div class="cat-icone">
-                                <div class="categoria-bloco h2">
-                                        <h2>Padaria</h2>
-                                </div>
-                                <img src="img/Land Page/padaria.png" alt="Padaria">
-                            </div>
-
-                            <!-- Seta esquerda -->
-                            <div class="seta-prod img">
-                                <img src="img/Land Page/SetaBranca.png" alt="">
-                            </div>
-
-                            <!-- Lista de produtos -->
-                                <div class="produtos-lista">
-
-                                    <div class="produto">
-                                        <a href="ProdInd.html?id=pao" class="produto">
-                                            <img src="img/Produtos/Pão.png">
-                                            <p>Pão Francês - Por Kg<br><strong>R$ 17,90</strong></p>
-                                        </a>
-                                    </div>
-
-                                    <div class="produto">
-                                        <a href="ProdInd.html?id=bolo" class="produto">
-                                            <img src="img/Produtos/bolo.png">
-                                            <p>Bolo Chocolate - Kg<br><strong>R$: 39,99</strong></p>
-                                        </a>
-                                    </div>
-
-                                    <div class="produto">
-                                        <a href="ProdInd.html?id=salgados" class="produto">
-                                            <img src="img/Produtos/salgado.png">
-                                            <p>Salgados - kg<br><strong>R$: 14,99</strong></p>
-                                        </a>
-                                    </div>
-                                </div>
-
-                            <!-- Seta direita -->
-                            <div class="seta-prod img">
-                                 <img src="img/Land Page/SetaBranca Dir.png" alt="">
-                            </div>
-                        </div>
-                    </section>
-                    <section class="categoria-bloco">
-                        <div class="categoria-containerbra">
-                            <!-- Ícone da categoria -->
-                            <div class="cat-iconeazul">
-                                <div class="categoria-bloco h2">
-                                        <h2>Laticínios</h2>
-                                </div>
-                                <img src="img/Land Page/Laticínios.png" alt="Laticínios">
-                            </div>
-
-                            <!-- Seta esquerda -->
-                            <div class="seta-prod img">
-                                <img src="img/Land Page/SetaBranca.png" alt="">
-                            </div>
-
-                            <!-- Lista de produtos -->
-                                <div class="produtos-lista">
-
-                                    <div class="produto">
-                                        <a href="ProdInd.html?id=margarida" class="produto">
-                                            <img src="img/Produtos/Margarina.png">
-                                            <p>Margarina - Delicia<br><strong>R$: 6,99</strong></p>
-                                        </a>
-                                    </div>
-
-                                    <div class="produto">
-                                        <a href="ProdInd.html?id=iogurte" class="produto">
-                                            <img src="img/Produtos/Danone.png">
-                                            <p>Iogurte de Morango - Danone<br><strong>R$: 11,99</strong></p>
-                                        </a>
-                                    </div>
-
-                                    <div class="produto">
-                                        <a href="ProdInd.html?id=leite" class="produto">
-                                            <img src="img/Produtos/Leite.png">
-                                            <p>Leite Integral - Piracanjuba<br><strong>R$: 4,99</strong></p>
-                                        </a>
-                                    </div>
-                                </div>
-
-                            <!-- Seta direita -->
-                            <div id="" class="seta-prod img">
-                                 <img src="img/Land Page/SetaBranca Dir.png" alt="">
-                            </div>
-                        </div>
-                    </section>
-                </div>
             </section>
-        </div>
+
+            <section class="categoria-bloco" id="mercearia">
+                    <div class="categoria-containerbra">
+                            <!-- Ícone da categoria -->
+                            <div class="cat-iconeazul">
+                                <div class="categoria-bloco h2">
+                                    <h2>Mercearia</h2>
+                                </div>
+                                <img src="img/Land Page/Marcenaria.png" alt="">
+                            </div>
+
+                                <!-- Seta esquerda -->
+                            <div class="seta-prod img">
+                                <img src="img/Land Page/SetaBranca.png" alt="">
+                            </div>
+
+                            <!-- Lista de produtos -->
+                            <div class="produtos-lista">
+                                <div class="carousel">
+                                    <div class="carousel-track">
+                                        <div class="carousel-item">
+                                            <div class="produto">
+                                                <a href="ProdInd.html?id=arroz" class="produto">
+                                                    <img src="img/Produtos/Arroz.png">
+                                                    <p>Arroz Branco - Emoções<br><strong>R$: 5,99</strong></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="produto">
+                                                <a href="ProdInd.html?id=oleo" class="produto">
+                                                    <img src="img/Produtos/oleo.png">
+                                                    <p>Óleo de Soja - Soya<br><strong>R$: 7,59</strong></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="produto">
+                                                <a href="ProdInd.html?id=feijao" class="produto">
+                                                    <img src="img/Produtos/Feijão.png">
+                                                    <p>Feijão Carioca - Kicaldo<br><strong>R$: 6,99</strong></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-dots"></div> 
+                                </div>
+                            </div>
+
+                            <!-- Seta direita -->
+                            <div class="seta-prod img">
+                                <img src="img/Land Page/SetaBranca Dir.png" alt="">
+                            </div>
+                    </div>
+            </section>
+
+            <section class="categoria-bloco" id="alimentos">
+                    <div class="categoria-container">
+
+                        <!-- Ícone da categoria -->
+                        <div class="cat-icone">
+                            <div class="categoria-bloco h2">
+                                    <h2>Alimentos</h2>
+                            </div>
+                            <img src="img/Land Page/Alimentos.png" alt="Alimentos">
+                        </div>
+
+                            <!-- Seta esquerda -->
+                        <div class="seta-prod img">
+                            <img src="img/Land Page/SetaBranca.png" alt="">
+                        </div>
+
+                        <!-- Lista de produtos -->
+                        <div class="produtos-lista">
+                            <div class="carousel">
+                                <div class="carousel-track">
+                                    <div class="carousel-item">
+                                        <div class="produto">
+                                            <a href="ProdInd.html?id=maça" class="produto">
+                                                <img src="img/Produtos//maça.png">
+                                                <p>Maça Verde - Kg<br><strong>R$: 12,99</strong></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="produto">
+                                            <a href="ProdInd.html?id=melancia" class="produto">
+                                                <img src="img/Produtos/melancia.png">
+                                                <p>Melancia - Kg<br><strong>R$: 4,69</strong></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="produto">
+                                            <a href="ProdInd.html?id=uva" class="produto">
+                                                <img src="img/Produtos/Uva.png">
+                                                <p>Uva - Kg<br><strong>R$: 15,99</strong></p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-dots"></div> 
+                            </div>
+                        </div>
+
+                        <!-- Seta direita -->
+                        <div class="seta-prod img">
+                            <img src="img/Land Page/SetaBranca Dir.png" alt="">
+                        </div>
+                    </div>
+            </section>
+
+            <div id="mais-categorias-extra" class="mais-categorias-extra escondido">
+                <section class="categoria-extra-bloco">
+                    <div class="categoria-extra-container">
+
+                        <section class="categoria-bloco" id="Higiene">
+                            <div class="categoria-containerbra">
+                                <!-- Ícone da categoria -->
+                                <div class="cat-iconeazul">
+                                    <div class="categoria-bloco h2">
+                                            <h2>Higiene</h2>
+                                    </div>
+                                    <img src="img/Land Page/Higiene.png" alt="Higiene">
+                                </div>
+
+                                <!-- Seta esquerda -->
+                                <div class="seta-prod img">
+                                    <img src="img/Land Page/SetaBranca.png" alt="">
+                                </div>
+
+                                <!-- Lista de produtos -->
+                                    <div class="produtos-lista">
+                                        <div class="carousel">
+                                            <div class="carousel-track">
+                                                <div class="carousel-item">
+                                                    <div class="produto">
+                                                        <a href="ProdInd.html?id=papel" class="produto">
+                                                            <img src="img/Produtos/Papel.png">
+                                                            <p>Papel Higiênico - Personal<br><strong>R$: 19,99</strong></p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="produto">
+                                                        <a href="ProdInd.html?id=colgate" class="produto">
+                                                            <img src="img/Produtos/Colgate.png">
+                                                            <p>Creme Dental - Colgate<br><strong>R$: 5,99</strong></p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="produto">
+                                                        <a href="ProdInd.html?id=Shampoo" class="produto">
+                                                            <img src="img/Produtos/Shampoo.png">
+                                                            <p>Shampoo - Pantene<br><strong>R$: 24,99</strong></p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-dots"></div> 
+                                        </div>
+                                    </div>
+
+                                <!-- Seta direita -->
+                                <div class="seta-prod img">
+                                    <img src="img/Land Page/SetaBranca Dir.png" alt="">
+                                </div>
+                            </div>
+                        </section>
+                        <section class="categoria-bloco" id="Padaria">
+                            <div class="categoria-container">
+                                <!-- Ícone da categoria -->
+                                <div class="cat-icone">
+                                    <div class="categoria-bloco h2">
+                                            <h2>Padaria</h2>
+                                    </div>
+                                    <img src="img/Land Page/padaria.png" alt="Padaria">
+                                </div>
+
+                                <!-- Seta esquerda -->
+                                <div class="seta-prod img">
+                                    <img src="img/Land Page/SetaBranca.png" alt="">
+                                </div>
+
+                                <!-- Lista de produtos -->
+                                    <div class="produtos-lista">
+                                        <div class="carousel">
+                                            <div class="carousel-track">
+                                                <div class="carousel-item">
+                                                    <div class="produto">
+                                                        <a href="ProdInd.html?id=pao" class="produto">
+                                                            <img src="img/Produtos/Pão.png">
+                                                            <p>Pão Francês - Por Kg<br><strong>R$ 17,90</strong></p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="produto">
+                                                        <a href="ProdInd.html?id=bolo" class="produto">
+                                                            <img src="img/Produtos/bolo.png">
+                                                            <p>Bolo Chocolate - Kg<br><strong>R$: 39,99</strong></p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="produto">
+                                                        <a href="ProdInd.html?id=salgados" class="produto">
+                                                            <img src="img/Produtos/salgado.png">
+                                                            <p>Salgados - kg<br><strong>R$: 14,99</strong></p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <div class="carousel-dots"></div> 
+                                        </div>
+                                    </div>
+
+                                <!-- Seta direita -->
+                                <div class="seta-prod img">
+                                    <img src="img/Land Page/SetaBranca Dir.png" alt="">
+                                </div>
+                            </div>
+                        </section>
+                        <section class="categoria-bloco" id="Laticínios">
+                            <div class="categoria-containerbra">
+                                <!-- Ícone da categoria -->
+                                <div class="cat-iconeazul">
+                                    <div class="categoria-bloco h2">
+                                            <h2>Laticínios</h2>
+                                    </div>
+                                    <img src="img/Land Page/Laticínios.png" alt="Laticínios">
+                                </div>
+
+                                <!-- Seta esquerda -->
+                                <div class="seta-prod img">
+                                    <img src="img/Land Page/SetaBranca.png" alt="">
+                                </div>
+
+                                <!-- Lista de produtos -->
+                                    <div class="produtos-lista">
+                                        <div class="carousel">
+                                            <div class="carousel-track">
+                                                <div class="carousel-item">
+                                                    <div class="produto">
+                                                        <a href="ProdInd.html?id=margarida" class="produto">
+                                                            <img src="img/Produtos/Margarina.png">
+                                                            <p>Margarina - Delicia<br><strong>R$: 6,99</strong></p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="produto">
+                                                        <a href="ProdInd.html?id=iogurte" class="produto">
+                                                            <img src="img/Produtos/Danone.png">
+                                                            <p>Iogurte de Morango - Danone<br><strong>R$: 11,99</strong></p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="produto">
+                                                        <a href="ProdInd.html?id=leite" class="produto">
+                                                            <img src="img/Produtos/Leite.png">
+                                                            <p>Leite Integral - Piracanjuba<br><strong>R$: 4,99</strong></p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-dots"></div> 
+                                        </div>
+                                    </div>
+
+                                <!-- Seta direita -->
+                                <div class="seta-prod img">
+                                    <img src="img/Land Page/SetaBranca Dir.png" alt="">
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </section> 
         <div class="grupo-botoes">
             <button id="btn-vermais" class="btn-vermais">
                 <span>Mais Categorias</span>
