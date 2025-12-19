@@ -1,6 +1,5 @@
 //PRODUTO INDIVIDUAL
 // Lista de produtos
-// só executa se estiver na página ProdInd
 if (document.querySelector(".produto-container")) {
     document.addEventListener("DOMContentLoaded", () => {
         carregarProduto();
@@ -259,7 +258,7 @@ function configurarQuantidade() {
 function atualizarLinkComprar(nomeProduto) {
 
     const quantidade = document.getElementById("quantidade").textContent;
-    const phone = "55999999999";
+    const phone = "(77) 99546-3348";
 
     const texto = encodeURIComponent(
         `Olá! Quero comprar: ${nomeProduto} (quantidade: ${quantidade})`
