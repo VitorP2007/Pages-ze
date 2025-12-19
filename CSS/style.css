@@ -115,7 +115,7 @@ nav a:hover {
 /* ====== MENU LATERAL ====== */
 .menu-mobile {
     position: fixed;
-    top: 78px; 
+    top: 76px; 
     right: -250px; /* escondido */
     width: 250px;
     height: calc(110% - 100px); /* não passa do header */
@@ -135,7 +135,7 @@ nav a:hover {
 .menu-mobile a {
     color: white;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
     padding: 20px 0;
     font-weight: 500;
     display: block;
@@ -253,7 +253,7 @@ nav a:hover {
 
 /* --- Botão finalizar --- */
 .btn-finalizar {
-    padding: 12px;
+    padding: 18px;
     font-size: 18px;
     background: #198cdc;
     color: white;
@@ -318,7 +318,6 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .ofertas .btn-ver-todas {
@@ -390,7 +389,6 @@ nav a:hover {
     padding: 35px;
     margin: 40px auto;
     width: 75%; /* alinhado igual a OFERTAS */
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -446,8 +444,7 @@ nav a:hover {
 }
 
 .voltar-topo span {
-    margin-left: 10px;
-    
+    margin-left: 10px; 
 }
 
 .voltar-topo:hover {
@@ -650,7 +647,6 @@ nav a:hover {
 }
 
 .categoria img {
-    
     width: 70px;
     height: 70px;
     cursor: pointer;
@@ -667,7 +663,7 @@ nav a:hover {
 /* ======= BLOCO DE CATEGORIA ======= */
 
 .categoria-bloco {
-    width: 85%;
+    width: 80%;
     margin: 40px auto;
 }
 
@@ -749,7 +745,7 @@ nav a:hover {
 }
 
 .produto img {
-    width: 130px;
+    width: 140px;
     transition: 0.3s;
 }
 
@@ -826,7 +822,6 @@ nav a:hover {
 
 .voltar-topopro span {
     margin-left: 10px;
-    
 }
 
 .voltar-topopro:hover {
@@ -867,7 +862,6 @@ nav a:hover {
     line-height: 1.5;
     color: #000000;
     text-align: justify;
-    
 }
 
 /* imagem à direita */
@@ -1108,14 +1102,12 @@ nav a:hover {
 .btn-qnt {
     width: 35px;
     height: 35px;
-
     border: none;
     border-radius: 8px;
     background: #198cdc;
     color: white;
     font-size: 22px;
     cursor: pointer;
-
     transition: 0.2s;
 }
 
@@ -1170,10 +1162,8 @@ a {
     text-decoration: none;
 }
 
-/* ==============================
-   BASE DE RESPONSIVIDADE
-   Layout fixo em 1360px
-============================== */
+/* ======RESPONSIVIDADE====== */
+
 .menu-mobile .link-pagina {
     max-width: 768px;
     display: none;
@@ -1183,7 +1173,6 @@ a {
     .Max {
         max-width: 1400px;
         margin: 0 auto;
-    
     }
 
     .Max .mapa-container {
@@ -1241,7 +1230,7 @@ a {
         flex-direction: column;
         gap: 25px;
         padding: 30px 55px;
-        text-align: left; /* <<< importante */
+        text-align: left;
     }
 
     .porque .texto {
@@ -1266,7 +1255,7 @@ a {
         margin-top: 30px;
     }
 
-        /* ===== FOOTER ===== */
+    /* ===== FOOTER ===== */
 
     .footer-container {
         display: grid;
@@ -1333,7 +1322,6 @@ a {
         display: flex;
         justify-content: center;
     }
-  
 
     /* ===== Produtos ===== */
     /* BLOCO DA CATEGORIA */
@@ -1382,13 +1370,19 @@ a {
 
 @media (max-width: 768px) {
     .principal {
-        max-width: 95%;
+        max-width: 90%;
+        padding: 80px 0px;
     } 
 
     .logo img { 
         margin-left: 0px;
-        height: 65px;
+        height: 50px;
         
+    }
+
+    /*Header*/
+    .menu-mobile {
+        top: 60px; 
     }
 
     .Margin {
@@ -1397,7 +1391,7 @@ a {
     /* ===== SEÇÃO OFERTAS ===== */
 
     .ofertas {
-        width: 95%;
+        width: 90%;
         display: flex;
     }
 
@@ -1413,7 +1407,7 @@ a {
     }
 
     .ofertas-left .btn-ver-todas {
-        font-size: 20px;
+        font-size: 15px;
         margin-left: 30px;
     }
     
@@ -1425,7 +1419,7 @@ a {
     /* ===== SEÇÃO POR QUE COMPRAR ===== */
 
     .porque {
-        width: 95%;
+        width: 90%;
         flex-direction: column;
         gap: 25px;
         padding: 30px 35px;
@@ -1488,8 +1482,8 @@ a {
 
     /* Nossos Produtos */
     .pricipal_produtos {
-        max-width: 100%;
-        margin-top: 35px;
+        max-width: 80%;
+        margin-top: 10px;
         padding: 108px 0px;
     }
 
@@ -1498,10 +1492,10 @@ a {
         width: 90%;
     }
 
-
     .faq-titulo {
         font-size: 20.5px;
     }
+
     .faq-resposta p {
         font-size: 18px;
     }
@@ -1510,16 +1504,9 @@ a {
     .avaliacoes-container {
         width: 95%;
     }
-    /* ===== ACESSO RÁPIDO ===== */
-    
 
     /* ===== Produtos ===== */
     /* BLOCO DA CATEGORIA */
-    .categoria-bloco {
-        width: 95%;
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
 
     .categoria-container, .categoria-containerbra {
         display: flex;
@@ -1547,7 +1534,7 @@ a {
 
     /* PRODUTOS */
     .produtos-lista .produto img {
-        width: 150px;
+        width: 180px;
         margin-top: 40px;
     }
 
@@ -1556,7 +1543,7 @@ a {
         text-align: center;
     }
 
-        /*PRODUTOInd.HTML*/
+    /*PRODUTOInd.HTML*/
     .produto-detalhe {
         flex-direction: column;
         align-items: center;
@@ -1564,6 +1551,14 @@ a {
 
     .produto-info {
         text-align: center;
+    }
+
+    .categoria-bloco {
+        width: 90%;
+    }
+
+    .produto-container {
+        margin:-15px auto 30px auto;
     }
 }
 
@@ -1577,61 +1572,62 @@ a {
 }
 
 .acesso-rapido {
-  padding: 30px 0;
+    padding: 30px 0;
 }
 
 .acesso-titulo {
-  text-align: center;
-  margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .categorias {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
 .categoria {
-  text-align: center;
-  text-decoration: none;
-  color: #000;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
 
-    position: relative;
-  z-index: 1;
+        position: relative;
+    z-index: 1;
 }
 
 
 
 .categoria img {
-  width: 80px;
-  height: auto;
+    width: 80px;
+    height: auto;
 }
 
 @media (max-width: 768px) {
-  .categorias {
-    justify-content: flex-start;
-    overflow-x: auto;
-    padding: 10px 16px;
-    gap: 16px;
-  }
+    .categorias {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding: 10px 16px;
+        gap: 16px;
+    }
 
-  .categoria {
-    flex: 0 0 auto;
-  }
+    .categoria {
+        flex: 0 0 auto;
+    }
 }
 
 section[id] {
     scroll-margin-top: ALTURA_DO_HEADER;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 720px) {
     img {
         max-width: 100%;
         height: auto;
     }
-/*Parte de baixo*/
+
+    /*FOOTER*/
     .banner-meio {
-            height: 350px;
+        height: 350px;
     }
 
     .footer {
@@ -1710,73 +1706,129 @@ section[id] {
         object-fit: cover;
     }
 
+    /*HEADER*/
+    .botoes img {
+        height: 23px;
+    }
+
     /* ===== Produtos ===== */
+
     .produto img {
         width: 150px;
         transition: 0.3s;
     }
 
+    .categoria-bloco h2 {
+        font-size: 25px;
+    }
 
     .produto p {
-        margin-top: 10px;
         font-size: 18px;
-        line-height: 2.0;
     }
 
     .pricipal_produtos {
-        margin-top: 25px;
-        max-width: 95%;
-        padding: 80px 0px;
+        margin-top: 5px;
+        max-width: 80%;
+        padding: 75px 0px;
     }
+
+    .categoria-bloco {
+        width: 80%;
+    }
+
+    .btn-vermais {
+        font-size: 15px;
+    }
+
+    .btn-vermais img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .btn-vermais span {
+        margin-left: 1px;
+    }
+
+    /* HOVER */
+    .btn-vermais:hover {
+        transform: scale(1.05);
+        background-color: #4a9a5c;
+    }
+
+    .voltar-topopro {
+        font-size: 15px;
+    }
+
+    .voltar-topopro img {
+        width: 30px;
+        height: 30px;
+    }
+
     /* ===== CARROSSEL ===== */
-  .carousel {
-    overflow: hidden;
-    position: relative;
-  }
+    .carousel {
+        overflow: hidden;
+        position: relative;
+    }
 
-  .carousel-track {
-    display: flex;
-    transition: transform 0.3s ease;
-    touch-action: pan-y;
-    gap: 0;
-  }
+    .carousel-track {
+        display: flex;
+        transition: transform 0.3s ease;
+        touch-action: pan-y;
+        gap: 0;
+    }
 
-  .carousel-item {
-    min-width: 100%;
-    flex-shrink: 0;
-  }
+    .carousel-item {
+        min-width: 100%;
+        flex-shrink: 0;
+    }
 
-  /* ===== BOLINHAS ===== */
-  .carousel-track {
-    touch-action: pan-y;
-  }
+    /* ===== BOLINHAS ===== */
+    .carousel-track {
+        touch-action: pan-y;
+    }
 
-  .carousel-dots {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin-top: 12px;
-  }
+    .carousel-dots {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 12px;
+    }
 
-  .carousel-dots button {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    border: none;
-    background-color: #616161;
-    cursor: pointer;
-  }
+    .carousel-dots button {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        border: none;
+        background-color: #616161;
+        cursor: pointer;
+    }
 
-  .carousel-dots button.active {
-    background-color: #ffffff;
-  }
-    /* ===== SEÇÃO OFERTAS ===== */
+    .carousel-dots button.active {
+        background-color: #ffffff;
+    }
+    /* ===== SEÇÃO OFERTAS  mais PRINCIPAL ===== */
     .ofertas h2 {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .ofertas-left .btn-ver-todas {
-        font-size: 22px;
-        margin-left: 0px;
+        font-size: 20px;
+        margin-left: 5px;
+    }
+
+    .ofertas {
+        width: 80%;
+    }
+
+    .principal {
+        max-width: 80%;
+    }
+
+    .principal h1 {
+        font-size: 25px;
+    }
+
+    .principal p {
+        font-size: 25px;
     }
 }

@@ -296,7 +296,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-/* =========================================================*/
+/* =================Carrosel=====================*/
 document.addEventListener('DOMContentLoaded', () => {
 
   let carouselAtivo = false;
@@ -388,5 +388,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
   verificarModo();
   window.addEventListener('resize', verificarModo);
-
 });
